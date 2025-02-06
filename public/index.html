@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            height: 100%;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 15px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        h1, h2, h3 {
+            color: #444;
+            margin: 0;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .header p {
+            margin: 5px 0;
+            font-size: 1.1em;
+        }
+        .section {
+            margin-bottom: 10px;
+            page-break-inside: avoid;
+        }
+        .section h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            font-size: 1.2em;
+        }
+        ul {
+            list-style-type: disc;
+            margin: 5px 0 5px 20px;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skills div {
+            background: #eaeaea;
+            padding: 5px 12px;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        /* Footer Styles */
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+        .footer a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Languages - Horizontal Layout */
+        .languages {
+            display: flex;
+            gap: 15px;
+            margin: 10px 0;
+        }
+        .languages div {
+            background: #eaeaea;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .language-item {
+            font-weight: bold;
+        }
+        .proficiency {
+            font-weight: normal;
+            color: #555;
+        }
+
+        /* Print Media Query */
+        @media print {
+            body, .container {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                background-color: white;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+            }
+            .header h1 {
+                font-size: 1.5em;
+            }
+            .header p {
+                font-size: 1em;
+            }
+            .skills div {
+                font-size: 0.9em;
+            }
+            .languages div {
+                font-size: 1em;
+            }
+            .footer {
+                font-size: 0.8em;
+                margin-top: 20px;
+            }
+            .section {
+                page-break-inside: avoid;
+            }
+            .container {
+                max-width: 100%;
+                margin: 0;
+                padding: 15px;
+            }
+            @page {
+                size: A4;
+                margin: 0mm;
+            }
+            html, body {
+                height: 100%;
+            }
+            /* Disable browser headers and footers */
+            .no-print {
+                display: none;
+            }
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            .header h1 {
+                font-size: 1.8em;
+            }
+            .header p {
+                font-size: 1em;
+            }
+            .skills div {
+                font-size: 0.85em;
+            }
+            .languages div {
+                font-size: 0.9em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 10px;
+            }
+            .header h1 {
+                font-size: 1.5em;
+            }
+            .header p {
+                font-size: 0.9em;
+            }
+            .skills div {
+                font-size: 0.75em;
+            }
+            .languages div {
+                font-size: 0.85em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>Kranthi Kumar</h1>
+            <p>Entry-Level Full-Stack Developer | PERN Stack & Blockchain Enthusiast</p>
+            <p>Email: kranthi.kumar.webdev@gmail.com | Contact: 9581155943</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/kranthi-kumar-2633a9341">kranthi-kumar</a> | GitHub: <a href="https://github.com/kranthikumar-dev">kranthikumar-dev</a> | Portfolio: <a href="https://my-portfolio-c1lkbpt50-kranthi-kumars-projects-13386b01.vercel.app/">kranthikumar-portfolio.com</a></p>
+        </div>
+
+        <!-- Summary Section -->
+        <div class="section">
+            <h2>Summary</h2>
+            <p>Entry-level full-stack developer skilled in the PERN stack (PostgreSQL, Express.js, React, Node.js) and blockchain technologies. Experienced in building scalable web and decentralized applications (DApps) with Ethereum, Solidity, and Web3.js. Adaptable and analytical, with a successful career transition from a non-IT background.</p>
+        </div>
+
+        <!-- Technical Skills Section -->
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <div>HTML</div>
+                <div>CSS</div>
+                <div>JavaScript</div>
+                <div>React</div>
+                <div>Node.js</div>
+                <div>PostgreSQL</div>
+                <div>Express.js</div>
+                <div>Web3.js</div>
+                <div>Solidity</div>
+                <div>Git/GitHub</div>
+                <div>RESTful APIs</div>
+                <div>Socket.IO</div>
+                <div>Blockchain</div>
+                <div>PERN Stack</div>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="section">
+            <h2>Projects</h2>
+            <p><strong>WorkFlow Pro:</strong> Real-time ERP Task Management App with React, Node.js, PostgreSQL, and Socket.IO.</p>
+            <p><strong>Real-Time E-Commerce Platform:</strong> Live inventory and chat system using React, Node.js, Stripe, and Socket.IO.</p>
+            <p><strong>Decentralized Voting System:</strong> Blockchain-powered voting app with Ethereum, Solidity, React, and Web3.js.</p>
+        </div>
+
+        <!-- Professional Experience Section -->
+        <div class="section">
+            <h2>Professional Experience</h2>
+            <p><strong>Field Support Executive</strong> | Sparsa Digital PVT LTD | 2021 - Present</p>
+            <ul>
+                <li>Provided on-site technical support, ensuring seamless deployment of digital solutions.</li>
+                <li>Collaborated with teams to troubleshoot issues and maintain client satisfaction.</li>
+            </ul>
+            <p><strong>Competitive Exam Preparation</strong> | 2018 - 2024</p>
+            <ul>
+                <li>Developed analytical and problem-solving skills through rigorous preparation for national-level exams.</li>
+                <li>Demonstrated self-discipline and adaptability, facilitating a successful career transition.</li>
+            </ul>
+        </div>
+
+        <!-- Education Section -->
+        <div class="section">
+            <h2>Education</h2>
+            <p><strong>Bachelor of Computer Applications</strong> | Osmania University | Graduated: 2017</p>
+        </div>
+
+   <!-- Certifications Section -->
+   <div class="section">
+      <h2>Certifications</h2>
+      <ul>
+        <li><strong><a href="Assets/udemy.certificate.jpg" target="_blank">Full-Stack Web Development - Udemy</a></strong></li>
+     </ul>
+   </div>
+        <!-- Languages Section -->
+        <div class="section">
+            <h2>Languages</h2>
+            <div class="languages">
+                <div class="language-item">English: <span class="proficiency">Fluent</span></div>
+                <div class="language-item">Telugu: <span class="proficiency">Native</span></div>
+                <div class="language-item">Hindi: <span class="proficiency">Fluent</span></div>
+            </div>
+        </div>
+        <!-- Footer Section -->
+        <div class="footer">
+            <p>&copy; 2025 Kranthi Kumar. All rights reserved.</p>
+            <p>Designed and Developed by <a href="https://github.com/kranthikumar-dev">Kranthi Kumar</a></p>
+        </div>
+    </div>
+</body>
+</html>
